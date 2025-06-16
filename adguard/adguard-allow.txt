@@ -24,6 +24,7 @@
 @@||unpkg.com^
 
 # google drive
+@@||www.gpogle.com/intl/en-US/drive^
 @@||drive.google.com^
 @@||drivefrontend-pa.clients6.google.com^
 @@||drive-thirdparty.googleusercontent.com^
