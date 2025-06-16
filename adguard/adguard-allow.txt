@@ -32,6 +32,8 @@
 
 
 # outlook online
+@@||res.public.onecdn.static.microsoft
+@@||res-1.cdn.office.net
 @@||outlook.live.com^
 @@||outlook.office365.com^
 @@||outlook.office.com^
