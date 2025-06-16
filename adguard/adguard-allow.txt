@@ -59,3 +59,27 @@
 @@|logincdn.msauth.net
 @@||acctcdn.msauth.net
 @@||account.live.com
+
+# onedrive
+@@||onedrive.live.com^
+@@||onedrive.office.com^
+@@||office.live.com^
+@@||office.com^
+@@||www.office.com^
+@@||live.com^
+@@||login.live.com^
+@@||login.microsoftonline.com^
+@@||microsoftonline.com^
+@@||microsoft.com^
+@@||msocdn.com^
+@@||officecdn.microsoft.com^
+@@||office365.com^
+@@||sharepoint.com^
+@@||sharepointonline.com^
+@@||static2.sharepointonline.com^
+@@||graph.microsoft.com^
+@@||aadcdn.msauth.net^
+@@||aadcdn.msftauth.net^
+@@||cdn.onedrivestatic.com^
+@@||res.cdn.office.net^
+@@||ocws.officeapps.live.com^
