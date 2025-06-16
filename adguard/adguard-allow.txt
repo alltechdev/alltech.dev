@@ -1,3 +1,5 @@
+# will be adding and removing, this is just a base
+
 # jtechforums
 @@||jtechforums.org^
 @@||forums.jtechforums.org^
@@ -27,3 +29,28 @@
 # sheets/docs
 @@||docs.google.com^
 @@||sheets.google.com^
+
+
+# outlook online
+@@||outlook.live.com^
+@@||outlook.office365.com^
+@@||outlook.office.com^
+@@||login.live.com^
+@@||login.microsoftonline.com^
+@@||office.com^
+@@||www.office.com^
+@@||msocdn.com^
+@@||microsoftonline.com^
+@@||microsoft.com^
+@@||live.com^
+@@||aadcdn.msftauth.net^
+@@||aadcdn.msauth.net^
+@@||office365.com^
+@@||ajax.aspnetcdn.com^
+@@||edge.microsoft.com^
+@@||ocws.officeapps.live.com^
+@@||office.live.com^
+@@||teams.microsoft.com^     # sometimes loads Teams/Calendar view
+@@||graph.microsoft.com^
+@@||officecdn.microsoft.com^
+@@||static2.sharepointonline.com^
