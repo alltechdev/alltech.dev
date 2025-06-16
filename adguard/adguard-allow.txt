@@ -58,3 +58,4 @@
 @@||static2.sharepointonline.com^
 @@|logincdn.msauth.net
 @@||acctcdn.msauth.net
+@@||account.live.com
