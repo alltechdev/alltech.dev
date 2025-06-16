@@ -2,7 +2,7 @@
 @@||jtechforums.org^
 @@||forums.jtechforums.org^
 
-# gmail
+# gmail/drive
 @@||gmail.com^
 @@||mail.google.com^
 @@||www.gstatic.com^
@@ -10,3 +10,4 @@
 @@||www.google.com/accounts
 @@||accounts.google.com/v3/signin
 @@||workspace.google.com^
+@@||accounts.google.com^
