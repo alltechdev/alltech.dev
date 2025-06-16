@@ -82,4 +82,5 @@
 @@||res.cdn.office.net^
 @@||ocws.officeapps.live.com^
 @@||amcdn.msftauth.net^
-@@||js.monitor.azure.com^
+@@||res-1.public.onecdn.static.microsoft^
+@@||res-2.public.onecdn.static.microsoft^
