@@ -40,6 +40,7 @@
 @@||ssl.gstatic.com^
 @@||workspace.google.com^
 @@||storage.googleapis.com^
+@@||accounts.youtube.com^
 
 # outlook online
 @@||outlook.live.com^
