@@ -4,7 +4,7 @@
 @@||jtechforums.org^
 @@||forums.jtechforums.org^
 
-# gmail/drive
+# gmail/drive/sheets/docs
 @@||gmail.com^
 @@||mail.google.com^
 @@||www.gstatic.com^
@@ -25,11 +25,8 @@
 @@||notifications.google.com^
 @@||myaccount.google.com^
 
-
-# sheets/docs
 @@||docs.google.com^
 @@||sheets.google.com^
-
 
 # outlook online
 @@||res.public.onecdn.static.microsoft
