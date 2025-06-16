@@ -6,29 +6,22 @@
 @@||jtechforums.org^
 @@||forums.jtechforums.org^
 
-# gmail/drive/sheets/docs
-@@||gmail.com^
-@@||mail.google.com^
-@@||www.gstatic.com^
-@@||gstatic.com^
-@@||fonts.gstatic.com^
-@@||www.google.com/accounts
-@@||accounts.google.com/v3/signin
-@@||workspace.google.com^
-@@||accounts.google.com^
+# google drive
 @@||drive.google.com^
-@@||ssl.gstatic.com^
-@@||fonts.googleapis.com^
-@@||lh3.googleusercontent.com^
-@@||googleusercontent.com^
-@@||apis.google.com^
+@@||drivefrontend-pa.clients6.google.com^
+@@||drive-thirdparty.googleusercontent.com^
+@@||accounts.google.com^
 @@||clients6.google.com^
-@@||play.googleapis.com^
-@@||notifications.google.com^
-@@||myaccount.google.com^
-
-@@||docs.google.com^
-@@||sheets.google.com^
+@@||clients4.google.com^
+@@||apis.google.com^
+@@||lh3.googleusercontent.com^
+@@||lh3.google.com^
+@@||fonts.googleapis.com^
+@@||fonts.gstatic.com^
+@@||www.gstatic.com^
+@@||ssl.gstatic.com^
+@@||workspace.google.com^
+@@||storage.googleapis.com^
 
 # outlook online
 @@||res.public.onecdn.static.microsoft
