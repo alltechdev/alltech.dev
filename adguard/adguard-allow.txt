@@ -11,3 +11,4 @@
 @@||accounts.google.com/v3/signin
 @@||workspace.google.com^
 @@||accounts.google.com^
+@@||drive.google.com^
