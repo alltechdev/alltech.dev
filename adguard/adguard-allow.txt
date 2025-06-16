@@ -3,8 +3,25 @@
 @@||alltech.dev^
 
 # jtechforums
-@@||jtechforums.org^
+@@||beacons.gcp.gvt2.com^
+@@||beacons.gvt2.com^
+@@||beacons2.gvt2.com^
+@@||beacons3.gvt2.com^
+@@||beacons4.gvt2.com^
+@@||beacons5.gvt2.com^
+@@||beacons5.gvt3.com^
+@@||cdnjs.cloudflare.com^
+@@||clients2.google.com^
+@@||content-autofill.googleapis.com^
+@@||drive.google.com^
+@@||forms.mesnan.com^
 @@||forums.jtechforums.org^
+@@||jtechforums.org^
+@@||newforum.jtechforums.org^
+@@||scontent-iad3-2.xx.fbcdn.net^
+@@||script.google.com^
+@@||ssl.gstatic.com^
+@@||unpkg.com^
 
 # google drive
 @@||drive.google.com^
