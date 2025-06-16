@@ -1,4 +1,4 @@
-# will be adding and removing, this is just a base
+# will be adding, editing, and removing, this is just a base
 
 # jtechforums
 @@||jtechforums.org^
