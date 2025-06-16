@@ -81,4 +81,5 @@
 @@||cdn.onedrivestatic.com^
 @@||res.cdn.office.net^
 @@||ocws.officeapps.live.com^
-@@||amcdn.msftauth.net
+@@||amcdn.msftauth.net^
+@@||js.monitor.azure.com^
