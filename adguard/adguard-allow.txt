@@ -58,6 +58,7 @@
 @@||account.live.com
 
 # onedrive
+@@||onedrive.com^
 @@||onedrive.live.com^
 @@||onedrive.office.com^
 @@||office.live.com^
