@@ -1,2 +1,13 @@
+# jtechforums
 @@||jtechforums.org^
 @@||forums.jtechforums.org^
+
+# gmail
+@@||gmail.com^
+@@||mail.google.com^
+@@||www.gstatic.com^
+@@||fonts.gstatic.com^
+@@||www.google.com/accounts
+@@||accounts.google.com/v3/signin
+@@||workspace.google.com^
+@@||
