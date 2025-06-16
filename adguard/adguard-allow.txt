@@ -10,4 +10,3 @@
 @@||www.google.com/accounts
 @@||accounts.google.com/v3/signin
 @@||workspace.google.com^
-@@||
