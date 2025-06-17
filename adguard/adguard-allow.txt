@@ -86,7 +86,6 @@
 @@||edge.microsoft.com^
 @@||login.microsoft.com^
 
-
 @@||*.outlook.com^
 @@||*.outlook.live.com^
 @@||*.mail.live.com^
@@ -119,12 +118,6 @@
 @@||*.akamaized.net^
 @@||*.akamaihd.net^
 @@||*.msedge.net^
-
-# Microsoft telemetry, health checks, and crash reporting
-@@||*.vortex.data.microsoft.com^
-@@||*.aria.microsoft.com^
-@@||*.crashlytics.com^
-@@||*.fabric.io^
 
 # Additional dependencies (JS, API, auth tokens, etc.)
 @@||*.api.office.com^
