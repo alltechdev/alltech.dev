@@ -41,6 +41,7 @@
 @@||workspace.google.com^
 @@||storage.googleapis.com^
 @@||accounts.youtube.com^
+@@||ogs.google.com
 
 # outlook online
 @@||outlook.live.com^
