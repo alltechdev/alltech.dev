@@ -177,3 +177,7 @@
 @@||*.settings.live.net^
 
 @@||1drvf.ms^
+
+@@||microsoftpersonalcontent.com^
+@@||*.microsoftpersonalcontent.com^
+
