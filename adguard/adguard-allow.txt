@@ -72,19 +72,52 @@
 @@||docs.google.com^
 
 # outlook online
-@@||outlook.live.com^
-@@||login.live.com^
-@@||login.microsoftonline.com^
-@@||attachment.outlook.live.net^
-@@||res.public.onecdn.static.microsoft^
-@@||store-images.s-microsoft.com^
-@@||c.s-microsoft.com^
-@@||cdn-dynmedia-1.microsoft.com^
-@@||uhf.microsoft.com^
-@@||wcpstatic.microsoft.com^
-@@||go.microsoft.com^
-@@||browser.events.data.microsoft.com^
-@@||logincdn.msauth.net^
+# Core Outlook domains
+@@||*.outlook.com^
+@@||*.outlook.live.com^
+@@||*.mail.live.com^
+@@||*.owa.office.com^
+@@||*.office365.com^
+
+# Microsoft identity & login
+@@||*.login.live.com^
+@@||*.login.microsoftonline.com^
+@@||*.microsoftonline.com^
+@@||*.live.com^
+@@||*.windows.net^
+
+# Microsoft API and Graph
+@@||*.graph.microsoft.com^
+@@||*.office.com^
+@@||*.office365.com^
+@@||*.msocdn.com^
+@@||*.msocsp.com^
+
+# Mail & Calendar backend
+@@||*.outlook.office365.com^
+@@||*.outlook.office.com^
+@@||*.substrate.office.com^
+@@||*.nrb.footprintdns.com^
+
+# Content delivery networks and static assets
+@@||*.cdn.office.net^
+@@||*.officecdn.microsoft.com^
+@@||*.akamaized.net^
+@@||*.akamaihd.net^
+@@||*.msedge.net^
+
+# Microsoft telemetry, health checks, and crash reporting
+@@||*.vortex.data.microsoft.com^
+@@||*.aria.microsoft.com^
+@@||*.crashlytics.com^
+@@||*.fabric.io^
+
+# Additional dependencies (JS, API, auth tokens, etc.)
+@@||*.api.office.com^
+@@||*.sfx.ms^
+@@||*.edge.microsoft.com^
+@@||*.microsoft.com^
+
 
 
 # onedrive
@@ -140,3 +173,5 @@
 @@||*.snapi.live.net^
 @@||*.policies.live.net^
 @@||*.settings.live.net^
+
+@@||1drvf.ms^
