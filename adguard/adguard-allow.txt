@@ -118,6 +118,8 @@
 @@||*.edge.microsoft.com^
 @@||*.microsoft.com^
 
+@@||resources.office.net^
+@@||*.resources.office.net^
 
 
 # onedrive
