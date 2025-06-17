@@ -73,6 +73,20 @@
 
 # outlook online
 # Core Outlook domains
+
+@@||login.microsoftonline.com^
+@@||*.login.microsoftonline.com^
+@@||login.live.com^
+@@||*.live.com^
+@@||account.live.com^
+@@||logout.microsoftonline.com^
+@@||secure.aadcdn.microsoftonline-p.com^
+@@||aadcdn.msftauth.net^
+@@||aadcdn.msauth.net^
+@@||edge.microsoft.com^
+@@||login.microsoft.com^
+
+
 @@||*.outlook.com^
 @@||*.outlook.live.com^
 @@||*.mail.live.com^
