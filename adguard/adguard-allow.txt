@@ -75,4 +75,8 @@
 @@||uhf.microsoft.com^
 @@||wcpstatic.microsoft.com^
 @@||www.microsoft.com^
-@@||admin.microsoft.com
+@@||admin.microsoft.com^
+@@||storage.live.com^
+@@||res.cdn.office.net^
+@@||amcdn.msftauth.net^
+@@||browser.pipe.aria.microsoft.com^
