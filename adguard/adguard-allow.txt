@@ -88,51 +88,55 @@
 
 
 # onedrive
-# OneDrive & Microsoft Services Allowlist (No Wildcards)
+# OneDrive basic endpoints
+@@||*.onedrive.com^
+@@||*.onedrive.live.com^
+@@||*.1drv.com^
 
-@@||onedrive.com^
-@@||onedrive.live.com^
-@@||login.live.com^
-@@||g.live.com^
-@@||spoprod-a.akamaihd.net^
-@@||mesh.com^
-@@||p.sfx.ms^
-@@||oneclient.sfx.ms^
-@@||microsoft.com^
-@@||fabric.io^
-@@||crashlytics.com^
-@@||vortex.data.microsoft.com^
-@@||posarprodcssservice.accesscontrol.windows.net^
-@@||redemptionservices.accesscontrol.windows.net^
-@@||token.cp.microsoft.com^
-@@||tokensit.cp.microsoft-tst.com^
-@@||office.com^
-@@||officeapps.live.com^
-@@||aria.microsoft.com^
-@@||mobileengagement.windows.net^
-@@||branch.io^
-@@||adjust.com^
-@@||servicebus.windows.net^
-@@||vas.samsungapps.com^
-@@||odc.officeapps.live.com^
-@@||login.windows.net^
-@@||login.microsoftonline.com^
-@@||files.1drv.com^
-@@||storage.live.com^
-@@||groups.office.live.com^
-@@||groups.photos.live.com^
-@@||groups.skydrive.live.com^
-@@||favorites.live.com^
-@@||oauth.live.com^
-@@||photos.live.com^
-@@||skydrive.live.com^
-@@||api.live.net^
-@@||apis.live.net^
-@@||docs.live.net^
-@@||policies.live.net^
-@@||settings.live.net^
-@@||skyapi.live.net^
-@@||snapi.live.net^
-@@||livefilestore.com^
-@@||storage.msn.com^
-@@||my.microsoftpersonalcontent.com^
+# Core Microsoft/JWT authentication & identity
+@@||*.live.com^
+@@||*.live.net^
+@@||*.login.live.com^
+@@||*.login.windows.net^
+@@||*.login.microsoftonline.com^
+
+# Microsoft and Office service dependencies
+@@||*.office.com^
+@@||*.officeapps.live.com^
+@@||*.microsoft.com^
+@@||*.azureedge.net^
+@@||*.servicebus.windows.net^
+
+# SoM/Telemetry & Crash Reporting
+@@||*.vortex.data.microsoft.com^
+@@||*.aria.microsoft.com^
+@@||*.crashlytics.com^
+@@||*.fabric.io^
+
+# CDN and static content
+@@||*.cdn.office.net^
+@@||*.akamaihd.net^
+@@||*.akamaized.net^
+@@||*.msedge.net^
+
+# OneDrive-specific storage and API
+@@||*.storage.live.com^
+@@||*.livefilestore.com^
+@@||*.files.1drv.com^
+@@||*.api.live.net^
+@@||*.apis.live.net^
+@@||*.res-*.cdn.office.net^
+
+# Share and collaboration
+@@||*.photos.live.com^
+@@||*.skydrive.live.com^
+@@||*.favorites.live.com^
+@@||*.groups.photos.live.com^
+@@||*.groups.office.live.com^
+
+# Deep service links
+@@||*.oauth.live.com^
+@@||*.skyapi.live.net^
+@@||*.snapi.live.net^
+@@||*.policies.live.net^
+@@||*.settings.live.net^
