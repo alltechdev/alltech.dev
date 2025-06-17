@@ -75,3 +75,4 @@
 @@||uhf.microsoft.com^
 @@||wcpstatic.microsoft.com^
 @@||www.microsoft.com^
+@@||admin.microsoft.com
