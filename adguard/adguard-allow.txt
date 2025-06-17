@@ -43,6 +43,9 @@
 @@||accounts.youtube.com^
 @@||ogs.google.com
 
+# google docs
+@@||docs.google.com^
+
 # outlook online
 @@||outlook.live.com^
 @@||login.live.com^
