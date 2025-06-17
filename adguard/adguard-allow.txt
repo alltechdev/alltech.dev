@@ -23,6 +23,31 @@
 @@||ssl.gstatic.com^
 @@||unpkg.com^
 
+# gmail
+@@||gmail.com^
+@@||mail.google.com^
+@@||smtp.gmail.com^
+@@||imap.gmail.com^
+@@||pop.gmail.com^
+@@||accounts.google.com^
+@@||accounts.youtube.com^
+@@||ssl.gstatic.com^
+@@||www.gstatic.com^
+@@||gstatic.com^
+@@||apis.google.com^
+@@||clients.google.com^
+@@||clients1.google.com^
+@@||clients2.google.com^
+@@||notifications.google.com^
+@@||connectivitycheck.gstatic.com^
+@@||googleusercontent.com^
+@@||mail-attachment.googleusercontent.com^
+@@||lh3.googleusercontent.com^
+@@||calendar.google.com^
+@@||contacts.google.com^
+@@||admin.google.com^
+@@||workspace.google.com^
+
 # google drive
 @@||www.google.com/intl/en-US/drive^
 @@||drive.google.com^
