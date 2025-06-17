@@ -144,4 +144,4 @@
 @@||storage.msn.com^
 @@||*.storage.msn.com^
 @@||*.*.storage.msn.com^
-@@||*.*.microsoftpersonalcontent.com^
+@@||my.microsoftpersonalcontent.com^
