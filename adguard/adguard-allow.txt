@@ -2,7 +2,7 @@
 
 @@||alltech.dev^
 
-# jtechforums
+# JTECHFORUMS
 @@||beacons.gcp.gvt2.com^
 @@||beacons.gvt2.com^
 @@||beacons2.gvt2.com^
@@ -23,7 +23,7 @@
 @@||ssl.gstatic.com^
 @@||unpkg.com^
 
-# gmail
+# GMAIL
 @@||gmail.com^
 @@||mail.google.com^
 @@||smtp.gmail.com^
@@ -48,7 +48,7 @@
 @@||admin.google.com^
 @@||workspace.google.com^
 
-# google drive
+# GOOGLE DRIVE
 @@||www.google.com/intl/en-US/drive^
 @@||drive.google.com^
 @@||drivefrontend-pa.clients6.google.com^
@@ -71,9 +71,9 @@
 # google docs
 @@||docs.google.com^
 
-# outlook online
-# Core Outlook domains
+# OUTLOOK ONLINE
 
+# Core Outlook domains
 @@||login.microsoftonline.com^
 @@||*.login.microsoftonline.com^
 @@||login.live.com^
