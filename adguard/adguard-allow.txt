@@ -141,6 +141,7 @@
 @@||*.onedrive.com^
 @@||*.onedrive.live.com^
 @@||*.1drv.com^
+@@||*.1drv.ms^
 
 # Core Microsoft/JWT authentication & identity
 @@||*.live.com^
