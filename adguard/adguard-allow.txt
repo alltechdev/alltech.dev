@@ -53,6 +53,7 @@
 
 # GOOGLE DRIVE
 @@||www.google.com/intl/en-US/drive/^
+@@||google.com/intl/en-US/drive/^
 @@||drive.google.com^
 @@||drivefrontend-pa.clients6.google.com^
 @@||drive-thirdparty.googleusercontent.com^
