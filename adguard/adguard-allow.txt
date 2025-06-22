@@ -52,7 +52,7 @@
 @@||workspace.google.com^
 
 # GOOGLE DRIVE
-@@||www.google.com/intl/en-US/drive^
+@@||www.google.com/intl/en-US/drive/^
 @@||drive.google.com^
 @@||drivefrontend-pa.clients6.google.com^
 @@||drive-thirdparty.googleusercontent.com^
