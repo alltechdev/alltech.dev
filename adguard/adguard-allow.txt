@@ -4,6 +4,7 @@
 
 # ubuntu updates
 @@||*.archive.ubuntu.com^
+@@||*.ubuntu.com
 
 # JTECHFORUMS
 @@||beacons.gcp.gvt2.com^
