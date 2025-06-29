@@ -3,9 +3,10 @@
 @@||alltech.dev^
 
 # ubuntu updates
-@@||*.archive.ubuntu.com^
-@@||us.archive.ubuntu.com^
-@@||*.ubuntu.com^
+@@||archive.ubuntu.com^
+@@||security.ubuntu.com^
+@@||ppa.launchpad.net^
+@@||snapcraft.io^
 
 # JTECHFORUMS
 @@||beacons.gcp.gvt2.com^
