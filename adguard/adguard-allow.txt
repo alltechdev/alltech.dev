@@ -3,7 +3,7 @@
 @@||alltech.dev^
 
 # ubuntu updates
-@@||archive.ubuntu.com^
+@@||*.archive.ubuntu.com^
 
 # JTECHFORUMS
 @@||beacons.gcp.gvt2.com^
