@@ -17,5 +17,5 @@ if [ -f "$TMP_DB" ] && [ "$(stat -c%s "$TMP_DB")" -gt 1024 ]; then
 
   cp "$TMP_DB" "$TARGET_DB"
   chown "$OWNER" "$TARGET_DB"
-  chmod 660 "$TARGET_DB"
+  chmod 440 "$TARGET_DB"
 fi
