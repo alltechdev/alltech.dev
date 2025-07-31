@@ -6,7 +6,7 @@ while true; do
   TARGET_DB="/data/user_de/0/com.android.providers.blockednumber/databases/blockednumbers.db"
 
   # Download the updated DB
-  wget -O "$TMP_DB" "$URL"
+  busybox wget -O "$TMP_DB" "$URL"
 
   # Validate the file exists and is not empty
   if [ -f "$TMP_DB" ] && [ "$(stat -c%s "$TMP_DB")" -gt 1024 ]; then
