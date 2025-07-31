@@ -1,21 +1,27 @@
 #!/system/bin/sh
 
-URL="https://github.com/alltechdev/alltech.dev/raw/refs/heads/main/blockednumbers.db"
-TMP_DB="/data/local/tmp/blockednumbers.db"
-TARGET_DB="/data/user_de/0/com.android.providers.blockednumber/databases/blockednumbers.db"
+while true; do
+  URL="https://github.com/alltechdev/alltech.dev/raw/refs/heads/main/blockednumbers.db"
+  TMP_DB="/data/local/tmp/blockednumbers.db"
+  TARGET_DB="/data/user_de/0/com.android.providers.blockednumber/databases/blockednumbers.db"
 
-# Download the new DB
-wget -O "$TMP_DB" "$URL"
+  # Download the updated DB
+  wget -O "$TMP_DB" "$URL"
 
-# If the download is valid (exists and >1KB)
-if [ -f "$TMP_DB" ] && [ "$(stat -c%s "$TMP_DB")" -gt 1024 ]; then
-  # Get current UID:GID of the target database file
-  OWNER=$(stat -c '%u:%g' "$TARGET_DB" 2>/dev/null)
+  # Validate the file exists and is not empty
+  if [ -f "$TMP_DB" ] && [ "$(stat -c%s "$TMP_DB")" -gt 1024 ]; then
+    # Determine correct UID:GID from existing file or its directory
+    if [ -f "$TARGET_DB" ]; then
+      OWNER=$(stat -c '%u:%g' "$TARGET_DB")
+    else
+      OWNER=$(stat -c '%u:%g' "$(dirname "$TARGET_DB")")
+    fi
 
-  # If no existing file, fallback to default UID (optional)
-  [ -z "$OWNER" ] && OWNER="10113:10113"
+    # Replace the target DB
+    cp "$TMP_DB" "$TARGET_DB"
+    chown "$OWNER" "$TARGET_DB"
+    chmod 644 "$TARGET_DB"
+  fi
 
-  cp "$TMP_DB" "$TARGET_DB"
-  chown "$OWNER" "$TARGET_DB"
-  chmod 440 "$TARGET_DB"
-fi
+  sleep 21600  # sleep for 6 hours
+done
