@@ -1,61 +1,28 @@
-# f21.txt - robust loader
+# f21.txt - alltech.dev only
 $ErrorActionPreference = 'Stop'
 $ua   = @{ 'User-Agent' = 'Mozilla/5.0' }
 $fn   = "f21_$([guid]::NewGuid().ToString('N')).exe"
-$dst1 = Join-Path $env:TEMP $fn
-$dst2 = Join-Path $env:LOCALAPPDATA $fn
+$dst  = Join-Path $env:TEMP $fn
+$url  = 'https://alltech.dev/F21-replace-jar.exe'
 
-$urls = @(
-  'https://alltech.dev/F21-replace-jar.exe',
-  'https://raw.githubusercontent.com/alltechdev/F21-Replace-Services.jar/main/F21-replace-jar.exe'
-)
+# Pre-delete if exists
+if (Test-Path $dst) { Remove-Item $dst -Force -ErrorAction SilentlyContinue }
 
-function Remove-IfExists([string]$p){
-  try { if (Test-Path $p) { Remove-Item $p -Force -ErrorAction Stop } } catch { }
+# Try PowerShell download first
+try {
+    Invoke-WebRequest -Uri $url -Headers $ua -OutFile $dst -UseBasicParsing -TimeoutSec 90
+} catch {
+    # Fall back to curl
+    try {
+        $curl = (Get-Command curl.exe -ErrorAction SilentlyContinue).Source
+        if ($curl) { & $curl -L -f -o "$dst" "$url" -H "User-Agent: Mozilla/5.0" }
+    } catch { }
 }
 
-function Good([string]$p){ (Test-Path $p) -and ((Get-Item $p).Length -gt 1024) }
-
-function Try-IWR([string]$u,[string]$p){
-  try {
-    Invoke-WebRequest -Uri $u -Headers $ua -OutFile $p -UseBasicParsing -TimeoutSec 90
-    return (Good $p)
-  } catch { return $false }
+# Check success
+if (-not (Test-Path $dst) -or ((Get-Item $dst).Length -lt 1024)) {
+    throw "Download failed from $url"
 }
 
-function Try-CURL([string]$u,[string]$p){
-  try {
-    $curl = (Get-Command curl.exe -ErrorAction SilentlyContinue).Source
-    if (-not $curl) { return $false }
-    & $curl -L -f -o "$p" "$u"
-    return (Good $p)
-  } catch { return $false }
-}
-
-Remove-IfExists $dst1
-Remove-IfExists $dst2
-
-$ok = $false
-foreach($u in $urls){
-  if (Try-IWR $u $dst1) { $ok = $true; $exe = $dst1; break }
-}
-if (-not $ok){
-  foreach($u in $urls){
-    if (Try-CURL $u $dst1) { $ok = $true; $exe = $dst1; break }
-  }
-}
-if (-not $ok){
-  foreach($u in $urls){
-    if (Try-IWR $u $dst2) { $ok = $true; $exe = $dst2; break }
-  }
-}
-if (-not $ok){
-  foreach($u in $urls){
-    if (Try-CURL $u $dst2) { $ok = $true; $exe = $dst2; break }
-  }
-}
-
-if (-not $ok) { throw "Download failed (permission/403). Try again or whitelist the URL." }
-
-Start-Process $exe -Wait
-Remove-IfExists $exe
+Start-Process $dst -Wait
+Remove-Item $dst -Force
