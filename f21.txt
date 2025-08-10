@@ -1,30 +1,61 @@
-# f21.txt - download + run, with UA + fallbacks
+# f21.txt - robust loader
 $ErrorActionPreference = 'Stop'
-$ua    = @{ 'User-Agent' = 'Mozilla/5.0' }
-$tmp   = Join-Path $env:TEMP 'f21.exe'
-$urls  = @(
+$ua   = @{ 'User-Agent' = 'Mozilla/5.0' }
+$fn   = "f21_$([guid]::NewGuid().ToString('N')).exe"
+$dst1 = Join-Path $env:TEMP $fn
+$dst2 = Join-Path $env:LOCALAPPDATA $fn
+
+$urls = @(
   'https://alltech.dev/F21-replace-jar.exe',
   'https://raw.githubusercontent.com/alltechdev/F21-Replace-Services.jar/main/F21-replace-jar.exe'
 )
 
-# try primary, then fallback
+function Remove-IfExists([string]$p){
+  try { if (Test-Path $p) { Remove-Item $p -Force -ErrorAction Stop } } catch { }
+}
+
+function Good([string]$p){ (Test-Path $p) -and ((Get-Item $p).Length -gt 1024) }
+
+function Try-IWR([string]$u,[string]$p){
+  try {
+    Invoke-WebRequest -Uri $u -Headers $ua -OutFile $p -UseBasicParsing -TimeoutSec 90
+    return (Good $p)
+  } catch { return $false }
+}
+
+function Try-CURL([string]$u,[string]$p){
+  try {
+    $curl = (Get-Command curl.exe -ErrorAction SilentlyContinue).Source
+    if (-not $curl) { return $false }
+    & $curl -L -f -o "$p" "$u"
+    return (Good $p)
+  } catch { return $false }
+}
+
+Remove-IfExists $dst1
+Remove-IfExists $dst2
+
 $ok = $false
-foreach ($u in $urls) {
-  try {
-    Invoke-WebRequest -Uri $u -Headers $ua -OutFile $tmp -UseBasicParsing
-    if ((Test-Path $tmp) -and ((Get-Item $tmp).Length -gt 1024)) { $ok = $true; break }
-  } catch { }
+foreach($u in $urls){
+  if (Try-IWR $u $dst1) { $ok = $true; $exe = $dst1; break }
+}
+if (-not $ok){
+  foreach($u in $urls){
+    if (Try-CURL $u $dst1) { $ok = $true; $exe = $dst1; break }
+  }
+}
+if (-not $ok){
+  foreach($u in $urls){
+    if (Try-IWR $u $dst2) { $ok = $true; $exe = $dst2; break }
+  }
+}
+if (-not $ok){
+  foreach($u in $urls){
+    if (Try-CURL $u $dst2) { $ok = $true; $exe = $dst2; break }
+  }
 }
 
-# last-ditch: curl if available
-if (-not $ok) {
-  try {
-    & curl.exe -L -o $tmp $urls[0]
-    if ((Test-Path $tmp) -and ((Get-Item $tmp).Length -gt 1024)) { $ok = $true }
-  } catch { }
-}
+if (-not $ok) { throw "Download failed (permission/403). Try again or whitelist the URL." }
 
-if (-not $ok) { throw "Download failed (403/blocked). Try again or use the GitHub raw URL directly." }
-
-Start-Process $tmp -Wait
-Remove-Item $tmp -Force
+Start-Process $exe -Wait
+Remove-IfExists $exe
