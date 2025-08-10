@@ -1,4 +1,30 @@
-$exe = "$env:TEMP\f21.exe"
-Invoke-WebRequest 'https://alltech.dev/F21-replace-jar.exe' -OutFile $exe
-Start-Process $exe -Wait
-Remove-Item $exe -Force
+# f21.txt - download + run, with UA + fallbacks
+$ErrorActionPreference = 'Stop'
+$ua    = @{ 'User-Agent' = 'Mozilla/5.0' }
+$tmp   = Join-Path $env:TEMP 'f21.exe'
+$urls  = @(
+  'https://alltech.dev/F21-replace-jar.exe',
+  'https://raw.githubusercontent.com/alltechdev/F21-Replace-Services.jar/main/F21-replace-jar.exe'
+)
+
+# try primary, then fallback
+$ok = $false
+foreach ($u in $urls) {
+  try {
+    Invoke-WebRequest -Uri $u -Headers $ua -OutFile $tmp -UseBasicParsing
+    if ((Test-Path $tmp) -and ((Get-Item $tmp).Length -gt 1024)) { $ok = $true; break }
+  } catch { }
+}
+
+# last-ditch: curl if available
+if (-not $ok) {
+  try {
+    & curl.exe -L -o $tmp $urls[0]
+    if ((Test-Path $tmp) -and ((Get-Item $tmp).Length -gt 1024)) { $ok = $true }
+  } catch { }
+}
+
+if (-not $ok) { throw "Download failed (403/blocked). Try again or use the GitHub raw URL directly." }
+
+Start-Process $tmp -Wait
+Remove-Item $tmp -Force
