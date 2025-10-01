@@ -1,0 +1,12 @@
+{
+  "version": "1.1",
+  "script_url": "https://raw.githubusercontent.com/alltechdev/alltech.dev/main/update_script.sh",
+  "changelog": [
+    "Initial system update release",
+    "Basic security patches",
+    "Performance optimizations"
+  ],
+  "required_android_version": "21",
+  "file_size": "1.2MB",
+  "description": "System update with security patches and performance improvements"
+}
