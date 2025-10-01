@@ -1,9 +1,11 @@
 {
-  "latest_version": "2.6",
+  "latest_version": "2.9",
   "updates": {
-    "2.6": {
-      "description": "app",
+    "2.9": {
+      "description": "System update v2.9",
       "file_size": "1.0MB",
+      "forced": false,
+      "automatic": true,
       "apk_url": "https://github.com/alltechdev/alltech.dev/blob/main/blocker.apk"
     }
   },
