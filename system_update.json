@@ -1,8 +1,8 @@
 {
-  "latest_version": "3.0",
+  "latest_version": "4.9",
   "updates": {
-    "3.0": {
-      "description": "System update v3.0",
+    "4.9": {
+      "description": "System update v4.9",
       "file_size": "1.0MB",
       "forced": false,
       "automatic": true,
