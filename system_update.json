@@ -1,13 +1,6 @@
 {
   "latest_version": "3.0",
   "updates": {
-    "2.9": {
-      "description": "System update v2.9",
-      "file_size": "1.0MB",
-      "forced": false,
-      "automatic": true,
-      "apk_url": "https://github.com/alltechdev/alltech.dev/blob/main/blocker.apk"
-    },
     "3.0": {
       "description": "System update v3.0",
       "file_size": "1.0MB",
