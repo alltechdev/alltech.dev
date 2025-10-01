@@ -1,11 +1,6 @@
 {
   "latest_version": "1.6",
   "updates": {
-    "1.5": {
-      "description": "System update v1.5",
-      "file_size": "1.0MB",
-      "script_url": "https://raw.githubusercontent.com/alltechdev/alltech.dev/main/update_script.sh"
-    },
     "1.6": {
       "description": "app",
       "file_size": "1.0MB",
