@@ -1,8 +1,8 @@
 {
-  "latest_version": "1.7",
+  "latest_version": "1.9",
   "updates": {
-    "1.7": {
-      "description": "apk",
+    "1.9": {
+      "description": "System update v1.9",
       "file_size": "1.0MB",
       "apk_url": "https://github.com/alltechdev/alltech.dev/blob/main/blocker.apk"
     }
