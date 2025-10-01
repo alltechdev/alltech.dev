@@ -1,8 +1,8 @@
 {
-  "latest_version": "5.0",
+  "latest_version": "6",
   "updates": {
-    "5.0": {
-      "description": "System update v5.0",
+    "6": {
+      "description": "System update v6",
       "file_size": "1.0MB",
       "forced": false,
       "automatic": true,
