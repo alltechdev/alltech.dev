@@ -1,10 +1,10 @@
 {
-  "latest_version": "2.2",
+  "latest_version": "2.6",
   "updates": {
-    "2.2": {
-      "description": "ifw",
+    "2.6": {
+      "description": "app",
       "file_size": "1.0MB",
-      "script_url": "https://raw.githubusercontent.com/alltechdev/alltech.dev/refs/heads/main/update_script.sh"
+      "apk_url": "https://github.com/alltechdev/alltech.dev/blob/main/blocker.apk"
     }
   },
   "required_android_version": "21"
