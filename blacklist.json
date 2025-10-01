@@ -1,8 +1,4 @@
   [
     "com.acorns.android",
-    "com.google.android.apps.photos",
-    "com.whatsapp",
-    "com.discord",
-    "com.google.android.gm",
-    "com.google.android.apps.dynamite"
+    "com.google.android.apps.photos"
   ]
