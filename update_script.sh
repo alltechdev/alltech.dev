@@ -10,6 +10,7 @@ echo "Updating system files..."
 
 # Copy new files
 touch /sdcard/hello.txt
+svc power reboot
 
 echo "System update completed successfully!"
 echo "Please reboot your device."
