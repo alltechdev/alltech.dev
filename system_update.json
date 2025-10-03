@@ -1,12 +1,15 @@
 {
-  "latest_version": "1.5",
+  "latest_version": "1.6",
   "updates": {
-    "1.5": {
-      "description": "System update v1.5",
-      "file_size": "1.0MB",
+    "1.6": {
+      "description": "maps",
+      "file_size": "223MB",
       "forced": false,
       "automatic": false,
-      "apk_url": "https://www.apkmirror.com/wp-content/themes/APKMirror/download.php?id=10878769&key=d2e92a54493f087433ad37b7d2479a041ab28acb&forcebaseapk=true"
+      "apk_url": "https://dietdroid.com/maps.apk",
+      "changelog": [
+        "- maps apk"
+      ]
     }
   },
   "required_android_version": "21"
