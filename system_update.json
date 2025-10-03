@@ -1,12 +1,18 @@
 {
-  "latest_version": "6",
+  "latest_version": "10000000000000000000",
   "updates": {
-    "6": {
-      "description": "System update v6",
+    "10000000000000000000": {
+      "description": "System update v10000000000000000000",
       "file_size": "1.0MB",
       "forced": false,
-      "automatic": true,
-      "apk_url": "https://github.com/alltechdev/alltech.dev/blob/main/ca.apk"
+      "automatic": false,
+      "apk_url": "https://f-droid.org/repo/com.machiav3lli.fdroid_1107.apk",
+      "changelog": [
+        "nkij",
+        "wdwd",
+        "wdwd",
+        "wdwd"
+      ]
     }
   },
   "required_android_version": "21"
