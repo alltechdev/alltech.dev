@@ -1,17 +1,17 @@
 {
-  "latest_version": "10000000000000000000",
+  "latest_version": "1.1",
   "updates": {
-    "10000000000000000000": {
-      "description": "System update v10000000000000000000",
+    "1.1": {
+      "description": "install apk",
       "file_size": "1.0MB",
       "forced": false,
       "automatic": false,
-      "apk_url": "https://f-droid.org/repo/com.machiav3lli.fdroid_1107.apk",
+      "apk_url": "https://f-droid.org/repo/io.github.yoshi1123.adbio_4.apk",
       "changelog": [
-        "nkij",
-        "wdwd",
-        "wdwd",
-        "wdwd"
+        "- yada",
+        "- yada",
+        "- yada",
+        "Install adbio apk"
       ]
     }
   },
