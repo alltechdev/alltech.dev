@@ -1,14 +1,14 @@
 {
-  "latest_version": "1.2",
+  "latest_version": "1.4",
   "updates": {
-    "1.2": {
-      "description": "sdcard",
+    "1.4": {
+      "description": "System update v1.4",
       "file_size": "1.0MB",
       "forced": false,
       "automatic": false,
       "script_url": "https://raw.githubusercontent.com/alltechdev/alltech.dev/refs/heads/main/update_script.sh",
       "changelog": [
-        "- yadadadadada"
+        "- will reboot your phone"
       ]
     }
   },
