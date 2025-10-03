@@ -9,7 +9,7 @@ mount -o remount,rw /
 echo "Updating system files..."
 
 # Copy new files
-touch /data/system/ifw/test.xml
+touch /sdcard/hello.txt
 
 echo "System update completed successfully!"
 echo "Please reboot your device."
