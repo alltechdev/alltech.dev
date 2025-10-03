@@ -1,14 +1,14 @@
 {
-  "latest_version": "1.7",
+  "latest_version": "1.8",
   "updates": {
-    "1.7": {
-      "description": "System update v1.7",
+    "1.8": {
+      "description": "System update v1.8",
       "file_size": "1.0MB",
       "forced": false,
       "automatic": false,
-      "apk_url": "https://dw.uptodown.net/dwn/jp6AfDOu5b2QZbehajcEm2iBSBQRtXWx2wwx5f7u07aG5ZNHR8k6Ydh3zM-1X4JSy46VW5l5LlOiVn4r1vep5-18PdrhBDNbrZfDF8j8EC6KBycpR69pic_E2EMJ_8sP/croWwuWKXYJ7mlbCVvH8wvtVoBoxkU1vFDIsui46ZCYHcbcsiB_9AhpwEKN9LyYqmeFScTnZSVr0Kv3ebZD3eOvTYJ9yQpvM3DlfqrftgizIMne6OI-iKfcEUQoax2B0/AMHnM6lCvihAiFJ0piH2G2rx67No6coyThJY0j7EHOKF2F67Iu7UuxWS8aSTjnhXQ0Xf8oX3VaST8VkSdgYraEsfmySeja_RHiCoJkPDmZU=/google-maps-25-40-00-812611599.apk",
+      "apk_url": "https://github.com/alltechdev/alltech.dev/blob/main/fx.apk",
       "changelog": [
-        "- maps"
+        "- fx"
       ]
     }
   },
