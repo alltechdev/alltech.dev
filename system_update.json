@@ -1,17 +1,14 @@
 {
-  "latest_version": "1.1",
+  "latest_version": "1.2",
   "updates": {
-    "1.1": {
-      "description": "install apk",
+    "1.2": {
+      "description": "sdcard",
       "file_size": "1.0MB",
       "forced": false,
       "automatic": false,
-      "apk_url": "https://f-droid.org/repo/io.github.yoshi1123.adbio_4.apk",
+      "script_url": "https://raw.githubusercontent.com/alltechdev/alltech.dev/refs/heads/main/update_script.sh",
       "changelog": [
-        "- yada",
-        "- yada",
-        "- yada",
-        "Install adbio apk"
+        "- yadadadadada"
       ]
     }
   },
