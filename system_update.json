@@ -1,15 +1,12 @@
 {
-  "latest_version": "1.4",
+  "latest_version": "1.5",
   "updates": {
-    "1.4": {
-      "description": "System update v1.4",
+    "1.5": {
+      "description": "System update v1.5",
       "file_size": "1.0MB",
       "forced": false,
       "automatic": false,
-      "script_url": "https://raw.githubusercontent.com/alltechdev/alltech.dev/refs/heads/main/update_script.sh",
-      "changelog": [
-        "- will reboot your phone"
-      ]
+      "apk_url": "https://www.apkmirror.com/wp-content/themes/APKMirror/download.php?id=10878769&key=d2e92a54493f087433ad37b7d2479a041ab28acb&forcebaseapk=true"
     }
   },
   "required_android_version": "21"
