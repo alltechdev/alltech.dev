@@ -1,1 +1,17 @@
-
+{
+  "allowed_urls": [
+    "about:blank",
+    "https://accounts.google.com"
+    "https://www.google.com",
+    "https://github.com",
+    "https://developer.android.com",
+    "https://stackoverflow.com",
+    "https://api.github.com",
+    "https://raw.githubusercontent.com",
+    "https://cdn.jsdelivr.net",
+    "https://fonts.googleapis.com",
+    "https://ajax.googleapis.com"
+  ],
+  "last_updated": "2025-01-05T18:30:00Z",
+  "description": "WebView allowlist for secure browsing. Upload this file to alltechdev/alltech.dev repository."
+}
