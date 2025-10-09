@@ -1,0 +1,11 @@
+<rules>
+   <activity block="true" log="false">
+      <component-filter name="com.google.android.apps.messaging/com.google.android.apps.messaging.ui.debug.DebugMmsConfigActivity" />
+   </activity>
+   <broadcast block="true" log="false">
+      <component-filter name="com.google.android.apps.messaging/com.google.android.apps.messaging.shared.receiver.MmsWapPushDeliverReceiver" />
+   </broadcast>
+   <service block="true" log="false">
+      <component-filter name="com.google.android.apps.messaging/android.support.v7.mms.MmsService" />
+   </service>
+</rules>

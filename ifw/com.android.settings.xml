@@ -1,0 +1,8 @@
+<rules>
+   <activity block="true" log="false">
+      <component-filter name="com.android.settings/com.android.settings.Settings$FactoryResetActivity" />
+      <component-filter name="com.android.settings/com.android.settings.Settings$FactoryResetConfirmActivity" />
+   </activity>
+   <broadcast block="true" log="false" />
+   <service block="true" log="false" />
+</rules>

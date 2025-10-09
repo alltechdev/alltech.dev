@@ -1,0 +1,7 @@
+<rules>
+   <activity block="true" log="false" />
+   <broadcast block="true" log="false" />
+   <service block="true" log="false">
+      <component-filter name="com.google.android.projection.gearhead/com.google.android.apps.auto.components.gearsnacks.GearSnacksService" />
+   </service>
+</rules>

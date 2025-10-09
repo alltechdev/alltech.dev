@@ -1,0 +1,11 @@
+<rules>
+   <activity block="true" log="false">
+      <component-filter name="com.nand.addtext/com.google.android.gms.ads.AdActivity" />
+      <component-filter name="com.nand.addtext/com.google.android.gms.ads.OutOfContextTestingActivity" />
+      <component-filter name="com.nand.addtext/com.google.android.gms.ads.NotificationHandlerActivity" />
+   </activity>
+   <broadcast block="true" log="false" />
+   <service block="true" log="false">
+      <component-filter name="com.nand.addtext/com.google.android.gms.ads.AdService" />
+   </service>
+</rules>

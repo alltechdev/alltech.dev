@@ -1,0 +1,9 @@
+<rules>
+   <activity block="true" log="false">
+      <component-filter name="com.ubercab/com.google.android.gms.ads.AdActivity" />
+   </activity>
+   <broadcast block="true" log="false" />
+   <service block="true" log="false">
+      <component-filter name="com.ubercab/com.google.android.gms.ads.AdService" />
+   </service>
+</rules>

@@ -1,0 +1,8 @@
+<rules>
+   <activity block="true" log="false">
+      <component-filter name="com.waze/com.waze.InternalWebBrowser" />
+      <component-filter name="com.waze/com.waze.web.SimpleWebActivity" />
+   </activity>
+   <broadcast block="true" log="false" />
+   <service block="true" log="false" />
+</rules>

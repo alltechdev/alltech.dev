@@ -1,0 +1,10 @@
+<rules>
+   <activity block="true" log="false">
+      <component-filter name="com.cloudstoreworks.webpagehtmlsource/com.unity3d.services.ads.adunit.AdUnitActivity" />
+      <component-filter name="com.cloudstoreworks.webpagehtmlsource/com.unity3d.services.ads.adunit.AdUnitTransparentActivity" />
+      <component-filter name="com.cloudstoreworks.webpagehtmlsource/com.unity3d.services.ads.adunit.AdUnitTransparentSoftwareActivity" />
+      <component-filter name="com.cloudstoreworks.webpagehtmlsource/com.unity3d.services.ads.adunit.AdUnitSoftwareActivity" />
+   </activity>
+   <broadcast block="true" log="false" />
+   <service block="true" log="false" />
+</rules>

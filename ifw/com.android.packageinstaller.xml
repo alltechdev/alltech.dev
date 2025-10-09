@@ -1,0 +1,16 @@
+<rules>
+   <activity block="true" log="false">
+      <component-filter name="com.android.packageinstaller/com.android.packageinstaller.DeleteStagedFileOnResult" />
+      <component-filter name="com.android.packageinstaller/com.android.packageinstaller.InstallFailed" />
+      <component-filter name="com.android.packageinstaller/com.android.packageinstaller.InstallInstalling" />
+      <component-filter name="com.android.packageinstaller/com.android.packageinstaller.v2.ui.InstallLaunch" />
+      <component-filter name="com.android.packageinstaller/com.android.packageinstaller.InstallStaging" />
+      <component-filter name="com.android.packageinstaller/com.android.packageinstaller.InstallStart" />
+      <component-filter name="com.android.packageinstaller/com.android.packageinstaller.InstallSuccess" />
+      <component-filter name="com.android.packageinstaller/com.android.packageinstaller.PackageInstallerActivity" />
+      <component-filter name="com.android.packageinstaller/com.android.packageinstaller.UnarchiveActivity" />
+      <component-filter name="com.android.packageinstaller/com.android.packageinstaller.UnarchiveErrorActivity" />
+   </activity>
+   <broadcast block="true" log="false" />
+   <service block="true" log="false" />
+</rules>

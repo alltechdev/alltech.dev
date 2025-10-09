@@ -1,0 +1,7 @@
+<rules>
+   <activity block="true" log="false">
+      <component-filter name="com.android.chrome/com.google.android.apps.chrome.Main" />
+   </activity>
+   <broadcast block="true" log="false" />
+   <service block="true" log="false" />
+</rules>

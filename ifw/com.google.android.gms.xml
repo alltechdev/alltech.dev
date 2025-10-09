@@ -1,0 +1,24 @@
+<rules>
+   <activity block="true" log="false">
+      <component-filter name="com.google.android.gms/com.google.android.gms.googlesettings.ui.GoogleSettingsActivity" />
+      <component-filter name="com.google.android.gms/com.google.android.gms.googlehelp.webview.GoogleHelpSupportWebViewActivity" />
+      <component-filter name="com.google.android.gms/com.google.android.gms.googlehelp.webview.GoogleHelpWebViewActivity" />
+      <component-filter name="com.google.android.gms/com.google.android.gms.googlehelp.helpactivities.HelpActivity" />
+      <component-filter name="com.google.android.gms/com.google.android.gms.googlehelp.helpactivities.OpenHelpActivity" />
+      <component-filter name="com.google.android.gms/com.google.android.gms.googlehelp.helpactivities.OpenHelpRtcActivity" />
+      <component-filter name="com.google.android.gms/com.google.android.gms.googlehelp.helpactivities.SystemAppTrampolineActivity" />
+      <component-filter name="com.google.android.gms/com.google.android.gms.growth.ui.webview.GrowthWebViewActivity" />
+      <component-filter name="com.google.android.gms/com.google.android.gms.octarine.ui.OctarineWebviewActivity" />
+      <component-filter name="com.google.android.gms/com.google.android.wallet.ui.common.WebViewFullScreenActivity" />
+      <component-filter name="com.google.android.gms/com.google.android.gms.permissions.debug.PermissionsWebViewDebugActivity" />
+      <component-filter name="com.google.android.gms/com.google.android.gms.googlehelp.webview.GoogleHelpRenderingApiWebViewActivity" />
+      <component-filter name="com.google.android.gms/com.google.android.gms.family.webview.FamilyWebViewActivity" />
+      <component-filter name="com.google.android.gms/com.google.android.gms.plus.ui.DpadNavigableWebViewActivity" />
+      <component-filter name="com.google.android.gms/com.google.android.gms.wearable.consent.TermsOfServiceActivity" />
+      <component-filter name="com.google.android.gms/com.google.android.gms.googlehelp.contact.chat.ChatConversationActivity" />
+   </activity>
+   <broadcast block="true" log="false" />
+   <service block="true" log="false">
+      <component-filter name="com.google.android.gms/com.google.android.gms.feedback.FeedbackAsyncService" />
+   </service>
+</rules>

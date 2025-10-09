@@ -1,0 +1,11 @@
+<rules>
+   <activity block="true" log="false">
+      <component-filter name="com.zombodroid.imagecombinerfree/com.unity3d.services.ads.adunit.AdUnitActivity" />
+      <component-filter name="com.zombodroid.imagecombinerfree/com.unity3d.services.ads.adunit.AdUnitTransparentActivity" />
+      <component-filter name="com.zombodroid.imagecombinerfree/com.unity3d.services.ads.adunit.AdUnitTransparentSoftwareActivity" />
+      <component-filter name="com.zombodroid.imagecombinerfree/com.unity3d.services.ads.adunit.AdUnitSoftwareActivity" />
+      <component-filter name="com.zombodroid.imagecombinerfree/com.unity3d.ads.adplayer.FullScreenWebViewDisplay" />
+   </activity>
+   <broadcast block="true" log="false" />
+   <service block="true" log="false" />
+</rules>

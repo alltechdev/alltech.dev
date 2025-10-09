@@ -1,0 +1,7 @@
+<rules>
+   <activity block="true" log="false">
+      <component-filter name="com.google.android.gm/com.google.android.libraries.communications.conference.ui.largescreen.HomeActivity" />
+   </activity>
+   <broadcast block="true" log="false" />
+   <service block="true" log="false" />
+</rules>
