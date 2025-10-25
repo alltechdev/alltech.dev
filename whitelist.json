@@ -2,5 +2,6 @@
     "com.coinbase.android CryptoCurrency",
     "com.google.android.gm Email",
     "chat.delta Email",
-    "com.authy.authy"
+    "com.authy.authy",
+    "com.google.android.apps.messaging Messaging"
   ]
