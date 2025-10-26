@@ -5,5 +5,5 @@
     "com.authy.authy",
     "MT Manager|bin.mt.plus.canary|1.0|https://dietdroid.com/mt.apk||Tools",
     "Google Maps|com.google.android.apps.maps|1.0|https://dietdroid.com/maps.apk||Nav",
-    "Aurora|com.aurora.store|1.0|https://dietdroid.com/as.apk||Store"
+    "Aurora|com.aurora.store.debug|1.0|https://dietdroid.com/as.apk||Store"
   ]
