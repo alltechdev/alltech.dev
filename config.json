@@ -1,6 +1,5 @@
 {
   "global_whitelist": [
-    "cellularisrael.com",
     "google.com",
     "googleapis.com",
     "gstatic.com",
@@ -15,6 +14,9 @@
         "googleapis.com",
         "gstatic.com"
       ]
+    },
+    "mark.via.gp": {
+      "policy": "open"
     }
   }
 }
