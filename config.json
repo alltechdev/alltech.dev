@@ -1,0 +1,19 @@
+{
+  "global_whitelist": [
+    "google.com",
+    "googleapis.com",
+    "gstatic.com",
+    "waze.com"
+  ],
+  "apps": {
+    "com.waze": {
+      "policy": "custom",
+      "custom_whitelist": [
+        "waze.com",
+        "google.com/maps",
+        "googleapis.com",
+        "gstatic.com"
+      ]
+    }
+  }
+}
